@@ -58,30 +58,13 @@ $(document).ready(function () {
             // Create container for result info (excluding poster)
             var resultInfo = document.createElement("div");
             resultInfo.classList.add("result-info");
-            // resultInfo.classList.add("col-md-4 sm-12");
 
-            // Rating representation (using HTML range)
-            var ratingHtml = "";
-            var maxRating = 10; // Adjust based on TMDB's rating scale
-            var ratingPercentage = Math.min(voteAverage / maxRating, 1) * 100; // Ensure percentage within 0-100
-            ratingHtml +=
-              '<input type="range" min="0" max="' +
-              maxRating +
-              '" value="' +
-              voteAverage +
-              '" disabled style="width: 100%; background: linear-gradient(to right, #fec400 ' +
-              ratingPercentage +
-              "%, #ddd " +
-              ratingPercentage +
-              '%);" />';
-            // ratingHtml += " (" + voteAverage + ")";
             var ratingElement = document.createElement("p");
             ratingElement.innerHTML =
               ratingBadge +
               "<small style='font-size: .675em'>(" +
               voteCount +
-              ")</small>" +
-              ratingHtml;
+              ")</small>";
             resultInfo.appendChild(ratingElement);
 
             // Build the result HTML structure
