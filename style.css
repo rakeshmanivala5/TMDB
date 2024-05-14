@@ -1,0 +1,120 @@
+.result {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.result h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.result img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.result p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Search Form */
+#searchForm {
+    margin-bottom: 20px;
+}
+
+/* Search Input */
+.form-control {
+    width: 100%;
+}
+
+/* Media Type Dropdown */
+.form-select {
+    width: 100%;
+}
+
+/* Search Button */
+.btn-primary {
+    width: 100%;
+}
+
+/* Search Results */
+.result {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.result h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.result img {
+    width: 100px;
+    margin-right: 10px;
+    float: left;
+    /* Float image to the left of text */
+}
+
+.result p {
+    margin-top: 0;
+}
+
+/* Clearfix for floated elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* rating */
+/* Image */
+.result img {
+    width: 100px;
+    height: auto;
+    height: 21vh;
+    object-fit: cover;
+    margin-right: 10px;
+    float: left;
+    /* Float image to the left of text */
+    border-radius: 5px;
+    /* Add border-radius for rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+}
+
+/* Rating */
+.result-info {
+    overflow: hidden;
+    /* Clear floats */
+}
+
+.rating-bar {
+    width: 100%;
+    /* Make rating bar fill the container */
+    height: 10px;
+    /* Set height of rating bar */
+    background-color: #ddd;
+    /* Default background color */
+    border-radius: 5px;
+    /* Add border-radius for rounded corners */
+    margin-bottom: 5px;
+    /* Add space below rating bar */
+}
+
+.rating-fill {
+    height: 100%;
+    /* Make the filled part of the rating bar fill its container */
+    background-color: #fec400;
+    /* Yellow color for filled part */
+}
